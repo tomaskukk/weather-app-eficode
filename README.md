@@ -1,6 +1,6 @@
 # Weather-application
 
-Application build for Docker course's final project
+Application built for Docker course's final project
 
 ## Changes to original version
 
