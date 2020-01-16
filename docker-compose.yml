@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+  weatherapp-frontend-service:
+    image: weatherapp-frontend
+    ports:
+      - 8000:8000
+      - 49153:49153
+    build: ./frontend
+    volumes:
+     - ~/course/plswork/weatherapp/frontend/src:/usr/src/app/src
+    environment:
+      - ENDPOINT=http://localhost:9000/api
+  weatherapp-backend-service:
+    image: weatherapp-backend
+    build: ./backend
+    ports:
+      - 9000:9000
+    environment:
+      - APPID=890fb314540c756373d07759c6b61320
+    volumes:
+      - ~/course/plswork/weatherapp/backend/src:/usr/src/app/src
+
