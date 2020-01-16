@@ -6,6 +6,17 @@ Application built for Docker course's final project
 
 In this version user is able to search for any city and see it's weather. Also the project is updated to react and react-dom to version 16.12.0.
 
+## Pulling the application
+
+First you should have Docker installed. Clone this repository and build the docker images.
+
+### Building images
+
+You need to build two images. Dockerfiles lay in frontend and backend directories.
+```
+docker build -t <image-name> <Path where dockerfile lays>  
+```
+
 ## Deployment to minikube
 
 This application can be deployed to minikube using kubernetes. See deployment for notes on how to deploy the project on your system.
