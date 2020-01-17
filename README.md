@@ -45,6 +45,7 @@ kubectl port-forward -n kubernetes-dashboard service/kubernetes-dashboard --addr
 #### Deployment
 ```
 kubectl run <name> --image=<image-name>:<image-tag>
+kubectl expose deployment <name> --type=NodePort --port <port>
 kubectl port-forward service/<name> --address 0.0.0.0 <port>:<external-port>
 ```
 
