@@ -50,4 +50,4 @@ kubectl port-forward service/<name> --address 0.0.0.0 <port>:<external-port>
 
 ### Using it
 
-Now you should be able to access the application in http://localhost: <port>
+Now you should be able to access the application in localhost:<port>
