@@ -4,11 +4,13 @@ Application built for Docker course's final project
 
 ## Changes to original version
 
-In this version user is able to search for any city and see it's weather. Also the project is updated to react and react-dom to version 16.12.0.
+In this version user is able to search for any city and see it's weather. Also the project's versions for react and react-dom are updated to 16.12.0.
 
 ## Pulling the application
 
 First you should have Docker installed. Clone this repository and build the docker images.
+If you don't have Docker yet here are instructions on how to get it on ubuntu
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 ### Building images
 
