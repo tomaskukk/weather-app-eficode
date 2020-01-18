@@ -19,6 +19,7 @@ const fetchWeather = async (city) => {
   const response = await fetch(endpoint);
   return response ? response.json() : {}
 };
+
 router.get('/api/weather', async ctx => {
   const city = ctx.request.query.city
   const weatherData = await fetchWeather(city);
@@ -27,7 +28,6 @@ router.get('/api/weather', async ctx => {
   ctx.type = 'application/json; charset=utf-8';
   ctx.body = weatherData.weather ? weatherData.weather[0] : {};
 });
-
 
 app.use(router.routes());
 app.use(router.allowedMethods());
