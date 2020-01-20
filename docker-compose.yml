@@ -17,7 +17,7 @@ services:
     ports:
       - 9000:9000
     environment:
-      - APPID=890fb314540c756373d07759c6b61320
+      - APPID=WEATHER_API_ID
     volumes:
       - ./backend/src:/usr/src/app/src
 
